@@ -2,7 +2,7 @@ import '../styles/globals.css';
 import '@fontsource/zen-dots/400.css'
 import type { AppProps } from 'next/app';
 import { WalletProvider } from '@cosmos-kit/react';
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 import { defaultTheme } from '../config';
 import { wallets as keplrWallets } from '@cosmos-kit/keplr';
 import { wallets as cosmostationWallets } from '@cosmos-kit/cosmostation';
@@ -33,6 +33,7 @@ function CreateCosmosApp({ Component, pageProps }: AppProps) {
 
   return (
     <ChakraProvider theme={defaultTheme}>
+      <ColorModeScript initialColorMode={'dark'} />
       <WalletProvider
         chains={chains}
         assetLists={assets}
