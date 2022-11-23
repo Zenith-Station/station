@@ -112,10 +112,10 @@ export default function Home() {
     });
 
     // fetch balance
-    const balance = await client.cosmos.bank.v1beta1.balance({
-      address,
-      denom: chainassets?.assets[0].base as string,
-    });
+    //const balance = await client.cosmos.bank.v1beta1.balance({
+    //  address,
+    //  denom: chainassets?.assets[0].base as string,
+    //});
 
     // Get the display exponent
     // we can get the exponent from chain registry asset denom_units
@@ -123,9 +123,9 @@ export default function Home() {
       ?.exponent as number;
 
     // show balance in display values by exponentiating it
-    const a = new BigNumber(balance.balance.amount);
-    const amount = a.multipliedBy(10 ** -exp);
-    setBalance(amount);
+    //const a = new BigNumber(balance.balance.amount);
+    //const amount = a.multipliedBy(10 ** -exp);
+    //setBalance(amount);
     setFetchingBalance(false);
   };
 

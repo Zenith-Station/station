@@ -36,4 +36,4 @@ yarn-error.log*
 next-env.d.ts
 
 README.md
---index.tsx
+./public/--index.tsx
