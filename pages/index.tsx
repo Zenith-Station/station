@@ -4,7 +4,6 @@ import { useWallet } from "@cosmos-kit/react";
 import { StdFee } from "@cosmjs/amino";
 import { SigningStargateClient } from "@cosmjs/stargate";
 import BigNumber from "bignumber.js";
-import { Card, CardFooter, CardHeader } from '@chakra-ui/card'
 import {
   Box,
   Divider,
@@ -16,7 +15,6 @@ import {
   Link,
   Button,
   useColorMode,
-  Center,
   Image,
   SimpleGrid,
   VisuallyHidden

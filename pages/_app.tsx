@@ -33,7 +33,7 @@ function CreateCosmosApp({ Component, pageProps }: AppProps) {
 
   return (
     <ChakraProvider theme={defaultTheme}>
-      <ColorModeScript initialColorMode={'light'} />
+      <ColorModeScript initialColorMode={'dark'} />
       <WalletProvider
         chains={chains}
         assetLists={assets}
