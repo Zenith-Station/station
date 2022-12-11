@@ -67,7 +67,7 @@ export const Dependency = ({ title, text, href }: FeatureProps) => {
           <Icon as={LinkIcon} />
         </Box>
         <Stack spacing={1}>
-          <Text fontSize="lg" fontWeight="semibold">
+          <Text fontSize="lg">
             {title}
           </Text>
           <Text
@@ -103,7 +103,7 @@ export const Delegate = ({ chain, yieldmos, keplr, img }: DelegateProps) => {
       > 
         <Box textAlign={'center'}>
         <Avatar src={img}/>
-        <Text fontSize="lg" fontWeight="semibold">
+        <Text fontSize="lg">
             {chain}
           </Text>
         </Box>
