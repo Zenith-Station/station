@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 import '@fontsource/zen-dots/400.css';
-import '@fontsource/sono/400.css';
+import '@fontsource/league-spartan/400.css';
 import type { AppProps } from 'next/app';
 import { WalletProvider } from '@cosmos-kit/react';
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';

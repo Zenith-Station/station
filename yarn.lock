@@ -1693,10 +1693,20 @@
     "@ethersproject/bytes" "^5.7.0"
     "@ethersproject/logger" "^5.7.0"
 
+"@fontsource/league-spartan@^4.5.12":
+  version "4.5.12"
+  resolved "https://registry.yarnpkg.com/@fontsource/league-spartan/-/league-spartan-4.5.12.tgz#e291491c78e5f28f6e1d8dfa09532203ca4bb4cb"
+  integrity sha512-pB+aVcE7zS5BllIrwkE1AwTQNzQMcSGZi1FTZFrqXcwHPSkoAre+MHE9rFPI3+w4WswMrCuFRYu5IKxm9tvmuw==
+
 "@fontsource/sono@^4.5.0":
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/@fontsource/sono/-/sono-4.5.0.tgz#989e9b156c4656976823b9b7c720af162bfa2541"
   integrity sha512-IMEjaY6COL2voZU5NyqiogxGTLCGMvCWvVcZFvqWCr4mKsAO1EVpXSj2r4UsLr4zCaVi+p/KUQ9o53PB5kF5kQ==
+
+"@fontsource/urbanist@^4.5.14":
+  version "4.5.14"
+  resolved "https://registry.yarnpkg.com/@fontsource/urbanist/-/urbanist-4.5.14.tgz#dcbf6587ef5625af82c91d5f788379bd91e2225b"
+  integrity sha512-b2Lcb/hC7ydpM+fk+YJzwtZT3dnWZeNQGQy+0fev7lrA+RVo0cdpP/lNzcfbwvA0CQbSpD3JYe/DOHv15ch3Ug==
 
 "@fontsource/zen-dots@^4.5.8":
   version "4.5.8"
