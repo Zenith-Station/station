@@ -42,6 +42,12 @@ export const delegateChains: DelegateProps[] = [
     img: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/evmos/images/evmos.svg'
   },
   {
+    chain: 'Stride',
+    yieldmos: 'https://www.yieldmos.com/v/zenith-station/evmos-staking-rewards',
+    keplr: 'https://wallet.keplr.app/chains/stride?modal=validator&chain=stride-1&validator_address=stridevaloper13rfuft69m3swst4ay7rugdy6pqg2un3tfa5qv5',
+    img: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg'
+  },
+  {
     chain: 'BitSong',
     yieldmos: 'https://www.yieldmos.com/v/zenith-station/btsg-staking-rewards',
     keplr: 'https://wallet.bitsong.io/#/validators/bitsongvaloper13rfuft69m3swst4ay7rugdy6pqg2un3tyw7px0',
