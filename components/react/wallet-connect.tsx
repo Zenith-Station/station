@@ -98,7 +98,7 @@ export const Rejected = ({
         >
           <Icon as={FiAlertTriangle} mt={1} />
           <Text>
-            <Text fontWeight="semibold" as="span">
+            <Text as="span">
               Warning:&ensp;
             </Text>
             {wordOfWarning}
@@ -138,7 +138,7 @@ export const Error = ({
         >
           <Icon as={FiAlertTriangle} mt={1} />
           <Text>
-            <Text fontWeight="semibold" as="span">
+            <Text as="span">
               Warning:&ensp;
             </Text>
             {wordOfWarning}
