@@ -139,7 +139,6 @@ export default function Home() {
       <Heading
           as="h1"
           fontSize={{ base: "3xl", md: "5xl" }}
-          fontWeight="extrabold"
           textAlign={"center"}
           mb={3}
         ><VisuallyHidden>Zenith</VisuallyHidden>
