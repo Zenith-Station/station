@@ -112,7 +112,7 @@ export const Delegate = ({ chain, yieldmos, keplr, img }: DelegateProps) => {
       > 
         <Box textAlign={'center'}>
         <Avatar src={img}/>
-        <Text fontSize="lg">
+        <Text fontSize="lg" fontFamily={"Sono"}>
             {chain}
           </Text>
         </Box>
@@ -149,7 +149,7 @@ export const DelegateDisabled = ({ chain, img }: DelegateDisableProps) => {
       > 
         <Box textAlign={'center'}>
         <Avatar src={img}/>
-        <Text fontSize="lg">
+        <Text fontSize="lg" fontFamily={"Sono"}>
             {chain}
           </Text>
         </Box>
@@ -186,7 +186,7 @@ export const Owner = ({ name, position, twitter, discord, img }: OwnerProps) => 
       > 
         <Box textAlign={'center'}>
         <Avatar src={img} mb={2} />
-        <Text fontSize="lg">
+        <Text fontSize="lg" fontFamily={"Sono"}>
           {name} 
         </Text>
         

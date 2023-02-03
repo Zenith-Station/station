@@ -165,7 +165,7 @@ export default function Home() {
   </TabList>
   <TabPanels>
           <TabPanel>
-            <Heading as="h1" mb={2}>
+            <Heading as="h2" mb={2}>
               Chains We Validate
             </Heading>
               <Grid
@@ -185,7 +185,7 @@ export default function Home() {
       </Grid>
     </TabPanel>
     <TabPanel>
-            <Heading as="h1" mb={2}>
+            <Heading as="h2" mb={2}>
               Owner/Operators
             </Heading>
             <Grid
@@ -215,7 +215,7 @@ export default function Home() {
             <Box mb={3}>
         <Divider />
       </Box>
-            <Heading fontFamily={'Work Sans'} mb={4}>Special Thanks to:</Heading>
+            <Heading as={"h2"} mb={4}>Special Thanks to:</Heading>
       <Grid
         templateColumns={{
           md: "repeat(2, 1fr)",
