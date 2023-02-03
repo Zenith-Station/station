@@ -158,7 +158,7 @@ export default function Home() {
   </Button></Link>
 </Stack>
 <Tabs isFitted variant='enclosed'>
-  <TabList mb='0.5rem'>
+        <TabList fontFamily={"Sono"} mb='0.5rem'>
     <Tab>Delegate</Tab>
     <Tab>About Us</Tab>
     <Tab isDisabled>Services</Tab>
@@ -203,10 +203,10 @@ export default function Home() {
             <Heading as="h1" mb={2}>
               About Zenith
             </Heading>
-            <Text mb={2} fontSize={"lg"}>Starting out in 2022 as OzMage Validation, on Bitsong, our mission began. With our strategic partners, we wished to foster diverse relationships with delegators, communities, and well known builders of the Cosmos Ecosystem. Within months we quickly upscaled our operation to include Evmos in our validation duties.</Text>
-            <Text mb={2} fontSize={"lg"}>Soon after acquiring the needed hardware and security, we were able to break into the Osmosis active set. Then added Stride as we transitioned from OzMage Validation to Zenith Station. The reasons for the brand change were numerous, but the major deciding factor was to more closely match the Cosmos Ecosystems pension for space themes.</Text>
-            <Text mb={2} fontSize={"lg"}>We feel we have become a best in class validator for our chains. We truly believe we helping foster and create sustainable, novel services by being active participants in the governance process on Evmos and beyond.</Text>
-          </TabPanel>
+            {//<Text mb={2} fontSize={"lg"}>Starting out in 2022 as OzMage Validation, on Bitsong, our mission began. With our strategic partners, we wished to foster diverse relationships with delegators, communities, and well known builders of the Cosmos Ecosystem. Within months we quickly upscaled our operation to include Evmos in our validation duties.</Text>
+              //<Text mb={2} fontSize={"lg"}>Soon after acquiring the needed hardware and security, we were able to break into the Osmosis active set. Then added Stride as we transitioned from OzMage Validation to Zenith Station. The reasons for the brand change were numerous, but the major deciding factor was to more closely match the Cosmos Ecosystems pension for space themes.</Text>
+              //<Text mb={2} fontSize={"lg"}>We feel we have become a best in class validator for our chains. We truly believe we helping foster and create sustainable, novel services by being active participants in the governance process on Evmos and beyond.</Text>
+            }</TabPanel>
               <TabPanel>
       Coming Soon TM
     </TabPanel>

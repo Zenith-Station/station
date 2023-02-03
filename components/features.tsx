@@ -42,7 +42,7 @@ export const Product = ({ title, text, href, src }: FeatureProps) => {
         }}
       >
         <HStack><Avatar name={title} src={src} size="sm"/>
-        <Heading fontFamily={'Work Sans'} fontSize="lg">
+        <Heading fontFamily={'Sono'} fontSize="lg">
           {title}
           </Heading>
           </HStack>

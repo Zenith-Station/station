@@ -3,8 +3,8 @@ import { extendTheme } from '@chakra-ui/react';
 export const defaultThemeObject = {
   initialColorMode: 'dark',
   fonts: {
-    body: 'League Spartan, system-ui, sans-serif',
-    heading: 'Zen Dots, Work Sans, system-ui, sans-serif'
+    body: 'League Spartan, Sono, system-ui, sans-serif',
+    heading: 'Zen Dots, system-ui, sans-serif'
   },
   colors: {
     primary: {
