@@ -5,6 +5,7 @@ import { StdFee } from "@cosmjs/amino";
 import { SigningStargateClient } from "@cosmjs/stargate";
 import BigNumber from "bignumber.js";
 import {
+  Tabs, TabList, TabPanels, Tab, TabPanel,
   Box,
   Divider,
   Grid,
@@ -27,7 +28,9 @@ import {
   coin,
 //  dependencies,
   products,
-  delegateChains
+  delegateChains,
+  delegateDisabledChains,
+  owners
 } from "../config";
 
 //import { WalletStatus } from "@cosmos-kit/core";
@@ -36,6 +39,8 @@ import {
 //  Dependency,
 //  WalletSection,
   Delegate,
+  DelegateDisabled,
+  Owner,
   handleChangeColorModeValue,
 } from "../components";
 //import { SendTokensCard } from "../components/react/send-tokens-card";
@@ -152,11 +157,18 @@ export default function Home() {
     Join our Discord!
   </Button></Link>
 </Stack>
-      <Box mb={3}>
-        <Divider />
-      </Box>
-
-        <Grid
+<Tabs isFitted variant='enclosed'>
+  <TabList mb='0.5rem'>
+    <Tab>Delegate</Tab>
+    <Tab>About Us</Tab>
+    <Tab isDisabled>Services</Tab>
+  </TabList>
+  <TabPanels>
+          <TabPanel>
+            <Heading as="h1" mb={2}>
+              Chains We Validate
+            </Heading>
+              <Grid
         templateColumns={{
           md: "repeat(2, 1fr)",
           lg: "repeat(3, 1fr)",
@@ -167,12 +179,37 @@ export default function Home() {
         {delegateChains.map((delegate) => (
           <Delegate key={delegate.chain} {...delegate} />
         ))}
+        {delegateDisabledChains.map((delegate) => (
+          <DelegateDisabled key={delegate.chain} {...delegate} />
+        ))}
       </Grid>
-
-      <Box mb={3}>
+    </TabPanel>
+    <TabPanel>
+            <Heading as="h1" mb={2}>
+              Owner/Operators
+            </Heading>
+            <Grid
+        templateColumns={{
+          md: "repeat(2, 1fr)",
+          lg: "repeat(3, 1fr)",
+        }}
+        gap={8}
+        mb={5}
+      >
+        {owners.map((delegate) => (
+          <Owner key={delegate.name} {...delegate} />
+        ))}
+            </Grid>
+          </TabPanel>
+              <TabPanel>
+      Coming Soon TM
+    </TabPanel>
+  </TabPanels>
+      </Tabs>
+            <Box mb={3}>
         <Divider />
       </Box>
-      <Heading fontFamily={'Work Sans'} mb={4}>Special Thanks to:</Heading>
+            <Heading fontFamily={'Work Sans'} mb={4}>Special Thanks to:</Heading>
       <Grid
         templateColumns={{
           md: "repeat(2, 1fr)",
@@ -196,7 +233,7 @@ export default function Home() {
         opacity={0.5}
         fontSize="sm"
       >
-        <Text>2022 © Zenith Station | </Text>
+        <Text>2023 © Zenith Station | </Text>
         <Text>Built with</Text>
         <Link
           href="https://cosmology.tech/"

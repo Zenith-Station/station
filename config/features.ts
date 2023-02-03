@@ -1,9 +1,9 @@
-import { FeatureProps, DelegateProps } from '../components';
+import { FeatureProps, DelegateProps, DelegateDisableProps, OwnerProps } from '../components';
 
 export const products: FeatureProps[] = [
   {
     title: 'Yieldmos (Beta)',
-    text: 'Easily set permission-less auto compounding!',
+    text: 'Boost yields by auto compounding your staking and LP rewards with validators of your choice.',
     href: 'https://www.yieldmos.com/v/zenith-station',
     src: './yieldmoslogo.png'
   },
@@ -25,6 +25,30 @@ export const dependencies: FeatureProps[] = [
     title: 'Next.js',
     text: 'A React Framework supports hybrid static & server rendering.',
     href: 'https://nextjs.org/'
+  }
+];
+
+export const owners: OwnerProps[] = [
+  {
+    name: "Luisqa",
+    position: "CFO, Head of Governance Affairs",
+    twitter: "https://twitter.com/luisqagt",
+    discord: "luisqa#0001",
+    img: "./luisqa.jpg",
+  },
+  {
+    name: "Boobcactus",
+    position: "CTO, Node Operations Manager",
+    twitter: "https://twitter.com/boobcactus",
+    discord: "boobcactus#0359",
+    img: "./boobcactus.jpg",
+  },
+  {
+    name: "Togg",
+    position: "CMO, Support Relations Expert",
+    twitter: "https://twitter.com/ToggLeTek",
+    discord: "ToggLeTek#2254",
+    img: "./togg.jpg",
   }
 ];
 
@@ -52,5 +76,13 @@ export const delegateChains: DelegateProps[] = [
     yieldmos: 'https://www.yieldmos.com/v/zenith-station/btsg-staking-rewards',
     keplr: 'https://wallet.bitsong.io/#/validators/bitsongvaloper13rfuft69m3swst4ay7rugdy6pqg2un3tyw7px0',
     img: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitsong/images/btsg.svg'
+  },
+];
+
+export const delegateDisabledChains: DelegateDisableProps[] = [{
+    chain: 'Coming Soon',
+    yieldmos: '/',
+    keplr: '/',
+    img: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
   },
 ];

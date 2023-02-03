@@ -46,6 +46,19 @@ export interface DelegateProps {
   img: string;
 }
 
+export interface OwnerProps {
+  name: string;
+  position: string;
+  twitter: string;
+  discord: string;
+  img: string;
+}
+
+export interface DelegateDisableProps {
+  chain: string;
+  img: string;
+}
+
 export interface ChainCardProps {
   prettyName: string;
   icon?: string;
