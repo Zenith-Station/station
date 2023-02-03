@@ -81,8 +81,6 @@ export const delegateChains: DelegateProps[] = [
 
 export const delegateDisabledChains: DelegateDisableProps[] = [{
     chain: 'Coming Soon',
-    yieldmos: '/',
-    keplr: '/',
     img: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg'
   },
 ];
