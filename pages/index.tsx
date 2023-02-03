@@ -203,10 +203,10 @@ export default function Home() {
             <Heading as="h1" mb={2}>
               About Zenith
             </Heading>
-            {//<Text mb={2} fontSize={"lg"}>Starting out in 2022 as OzMage Validation, on Bitsong, our mission began. With our strategic partners, we wished to foster diverse relationships with delegators, communities, and well known builders of the Cosmos Ecosystem. Within months we quickly upscaled our operation to include Evmos in our validation duties.</Text>
-              //<Text mb={2} fontSize={"lg"}>Soon after acquiring the needed hardware and security, we were able to break into the Osmosis active set. Then added Stride as we transitioned from OzMage Validation to Zenith Station. The reasons for the brand change were numerous, but the major deciding factor was to more closely match the Cosmos Ecosystems pension for space themes.</Text>
-              //<Text mb={2} fontSize={"lg"}>We feel we have become a best in class validator for our chains. We truly believe we helping foster and create sustainable, novel services by being active participants in the governance process on Evmos and beyond.</Text>
-            }</TabPanel>
+            <Text mb={2} fontSize={"lg"}>Zenith Station started small, with a mission to build diverse relationships within the Cosmos Ecosystem. As a result, we haven`&apos;`t always been influential, and we`&apos;`d like to take you back to the beginning. Enter: Bitsong - our first foray into validation. This chain gave us a realistic place to gauge interest and learn our skills comfortably while operating inside a production environment.</Text>
+              <Text mb={2} fontSize={"lg"}>Over time, we formed strategic partnerships and quickly expanded our services to include Evmos. With the acquisition of bare metal hardware and additional economic security, Zenith Station was able to enter the Osmosis active set while also adding Stride to our portfolio. At this moment, we decided to change our name - from OzMage Validation to Zenith Station - reflecting our desire to align with the space-themed passion of the Cosmos Ecosystem. </Text>
+              <Text mb={2} fontSize={"lg"}>Today, Zenith Station prides itself on being a top-performing bare metal validator, boasting averages of over 99% uptime. In addition to our reliable services, we are committed to playing an active role in governance to drive sustainable growth to the chains we validate.</Text>
+            </TabPanel>
               <TabPanel>
       Coming Soon TM
     </TabPanel>
