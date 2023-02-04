@@ -49,7 +49,7 @@ export function stringTruncateFromCenter(str: string, maxLength: number) {
   return str.substring(0, left) + midChar + str.substring(right);
 }
 
-export function handleChangeColorModeValue(
+export function handleChangeColorModeValues(
   colorMode: string,
   light: string,
   dark: string
@@ -98,7 +98,7 @@ export const ConnectedShowAddress = ({
       justifyContent="center"
       borderRadius={isRound ? 'full' : 'lg'}
       border="1px solid"
-      borderColor={handleChangeColorModeValue(
+      borderColor={handleChangeColorModeValues(
         colorMode,
         'gray.200',
         'whiteAlpha.300'
@@ -108,7 +108,7 @@ export const ConnectedShowAddress = ({
       minH="fit-content"
       pl={2}
       pr={2}
-      color={handleChangeColorModeValue(
+      color={handleChangeColorModeValues(
         colorMode,
         'gray.700',
         'whiteAlpha.600'
@@ -171,7 +171,7 @@ export const ConnectedShowAddress = ({
           color={
             hasCopied
               ? 'green.400'
-              : handleChangeColorModeValue(
+              : handleChangeColorModeValues(
                   colorMode,
                   'gray.500',
                   'whiteAlpha.400'
