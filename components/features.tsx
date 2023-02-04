@@ -4,6 +4,7 @@ import {
   HStack,
   Avatar,
   Link,
+  Image,
   Icon,
   Card, CardHeader, CardBody, CardFooter,
   Divider,
@@ -32,7 +33,8 @@ export const Product = ({ title, text, href, src }: FeatureProps) => {
       justifyContent="center"> 
         <Card
           minH={36}
-        textAlign={'center'}
+          textAlign={'center'}
+          alignItems={'center'}
         size={'sm'}
         borderRadius={'1rem'}
         boxShadow={useColorModeValue("0 1px 3px #5b5565, 0 2px 12px -2px #5b5565","0 1px 3px #2d2a31, 0 2px 12px -2px #000")}
@@ -43,10 +45,12 @@ export const Product = ({ title, text, href, src }: FeatureProps) => {
           )
         }}>
           <CardHeader>
-            <Avatar name={title} src={src} size="md"/>
+            <HStack>
+            <Image alt={title} src={src} height={'45px'} />
         <Heading fontFamily={'Sono'} fontSize="lg">
           {title}
-            </Heading>
+              </Heading>
+              </HStack>
             <Divider mt={5} />
           </CardHeader>
           <CardBody>

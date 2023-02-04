@@ -12,6 +12,12 @@ export const products: FeatureProps[] = [
     text: 'One command, modern Cosmos app ⚛️ by Cosmology Tech.',
     href: 'https://github.com/cosmology-tech/create-cosmos-app',
     src: './images/astronaut.svg'
+  },
+  {
+    title: 'Interbloc',
+    text: 'Professional and reliable infrastructure as a service for the Cosmos Ecosystem.',
+    href: 'https://www.interbloc.org/',
+    src: './images/interbloc.png'
   }
 ];
 

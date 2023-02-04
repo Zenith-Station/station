@@ -166,7 +166,9 @@ export default function Home() {
   </TabList>
   <TabPanels>
           <TabPanel>
-            <Heading as="h2" mb={2}>
+            <Heading as="h2"
+              mb={2}
+              fontSize={{ base: "2xl", md: "3xl" }}>
               Chains We Validate
             </Heading>
               <Grid
@@ -174,7 +176,8 @@ export default function Home() {
           md: "repeat(2, 1fr)",
           lg: "repeat(3, 1fr)",
         }}
-        gap={5}
+              gap={2}
+              mx={-8}
         mb={5}
       >
         {delegateChains.map((delegate) => (
@@ -186,13 +189,25 @@ export default function Home() {
       </Grid>
     </TabPanel>
           <TabPanel>
-            <Heading as="h1" mb={2}>
+            <Heading
+              as="h1"
+              mb={2}
+              fontSize={{ base: "2xl", md: "3xl" }}>
               About Zenith
             </Heading>
-            <Text mb={5} fontSize={"lg"}>Zenith Station started small, with a mission to build diverse relationships within the Cosmos Ecosystem. As a result, we haven&#39;t always been influential, and we&#39;d like to take you back to the beginning. Enter: Bitsong - our first foray into validation. This chain gave us a realistic place to gauge interest and learn our skills comfortably while operating inside a production environment.</Text>
-              <Text mb={5} fontSize={"lg"}>Over time, we formed strategic partnerships and quickly expanded our services to include Evmos. With the acquisition of bare metal hardware and additional economic security, Zenith Station was able to enter the Osmosis active set while also adding Stride to our portfolio. At this moment, we decided to change our name - from OzMage Validation to Zenith Station - reflecting our desire to align with the space-themed passion of the Cosmos Ecosystem. </Text>
-              <Text mb={5} fontSize={"lg"}>Today, Zenith Station prides itself on being a top-performing bare metal validator, boasting averages of over 99% uptime. In addition to our reliable services, we are committed to playing an active role in governance to drive sustainable growth to the chains we validate.</Text>
-            <Heading as="h2" mb={2}>
+            <Text
+              mb={5}
+              fontSize={{ base: "md", md: "lg" }}>Zenith Station started small, with a mission to build diverse relationships within the Cosmos Ecosystem. As a result, we haven&#39;t always been influential, and we&#39;d like to take you back to the beginning. Enter: Bitsong - our first foray into validation. This chain gave us a realistic place to gauge interest and learn our skills comfortably while operating inside a production environment.</Text>
+            <Text
+              mb={5}
+              fontSize={{ base: "md", md: "lg" }}>Over time, we formed strategic partnerships and quickly expanded our services to include Evmos. With the acquisition of bare metal hardware and additional economic security, Zenith Station was able to enter the Osmosis active set while also adding Stride to our portfolio. At this moment, we decided to change our name - from OzMage Validation to Zenith Station - reflecting our desire to align with the space-themed passion of the Cosmos Ecosystem. </Text>
+            <Text
+              mb={5}
+              fontSize={{ base: "md", md: "lg" }}>Today, Zenith Station prides itself on being a top-performing bare metal validator, boasting averages of over 99% uptime. In addition to our reliable services, we are committed to playing an active role in governance to drive sustainable growth to the chains we validate.</Text>
+            <Heading
+              as="h2"
+              mb={2}
+              fontSize={{ base: "2xl", md: "3xl" }}>
               Owner/Operators
             </Heading>
             <Grid
@@ -200,7 +215,7 @@ export default function Home() {
           md: "repeat(2, 1fr)",
           lg: "repeat(3, 1fr)",
         }}
-        gap={8}
+        gap={2}
         mb={5}
       >
         {owners.map((delegate) => (
@@ -216,7 +231,10 @@ export default function Home() {
             <Box mb={3}>
         <Divider />
       </Box>
-            <Heading as={"h2"} mb={4}>Special Thanks to:</Heading>
+      <Heading as={"h2"}
+        mb={4}
+        fontSize={{ base: "2xl", md: "3xl" }}>
+        Special Thanks to:</Heading>
       <Grid
         templateColumns={{
           md: "repeat(2, 1fr)",
