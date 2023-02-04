@@ -31,7 +31,7 @@ export const ChainCard = (props: ChainCardProps) => {
           fallbackSrc={'https://dummyimage.com/150/9e9e9e/ffffff&text=☒'}
         />
       </Box>
-      <Text fontSize="xl" paddingEnd={'18px'}>
+      <Text fontSize="xl" fontWeight="semibold" paddingEnd={'18px'}>
         {props.prettyName}
       </Text>
     </Stack>

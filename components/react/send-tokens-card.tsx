@@ -44,6 +44,7 @@ export const SendTokensCard = ({
           as="h3"
           textAlign="center"
           fontSize={{ base: "xl", md: "2xl" }}
+          fontWeight="extrabold"
           color="primary.400"
           m={30}
         >
@@ -93,6 +94,7 @@ export const SendTokensCard = ({
               "primary.500",
               "primary.200"
             )}
+            fontWeight="semibold"
             fontSize="xl"
           >
             {balance}

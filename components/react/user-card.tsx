@@ -23,7 +23,7 @@ export const ConnectedUserInfo = ({
           >
             {icon}
           </Box>
-          <Text fontSize={{ md: 'xl' }}>
+          <Text fontSize={{ md: 'xl' }} fontWeight="semibold">
             {username}
           </Text>
         </>

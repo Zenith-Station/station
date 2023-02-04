@@ -36,7 +36,7 @@ export interface FeatureProps {
   title: string;
   text: string;
   href: string;
-  src?: string;
+  src: string;
 }
 
 export interface DelegateProps {
@@ -44,6 +44,7 @@ export interface DelegateProps {
   yieldmos: string;
   keplr: string;
   img: string;
+  color: string;
 }
 
 export interface OwnerProps {
@@ -52,6 +53,7 @@ export interface OwnerProps {
   twitter: string;
   discord: string;
   img: string;
+  color: string;
 }
 
 export interface DelegateDisableProps {
