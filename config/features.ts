@@ -79,7 +79,6 @@ export const delegateChains: DelegateProps[] = [
   },
   {
     chain: 'Mars',
-    yieldmos: '',
     keplr: 'https://wallet.keplr.app/chains/mars-hub?modal=validator&chain=mars-1&validator_address=marsvaloper13rfuft69m3swst4ay7rugdy6pqg2un3tqj4v9r',
     img: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/mars/images/mars-token.svg',
     color: 'rgba(215, 65, 44,0.05)'
