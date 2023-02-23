@@ -41,7 +41,7 @@ export interface FeatureProps {
 
 export interface DelegateProps {
   chain: string;
-  yieldmos: string;
+  yieldmos?: string;
   keplr: string;
   img: string;
   color: string;
