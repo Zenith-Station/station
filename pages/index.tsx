@@ -6,7 +6,14 @@ import { SigningStargateClient } from '@cosmjs/stargate';
 import BigNumber from 'bignumber.js';
 
 import {
-  Tabs, TabList, TabPanels, Tab, TabPanel,
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
+  Stat,
+  StatHelpText,
+  StatNumber,
   Box,
   Divider,
   Grid,
@@ -21,6 +28,7 @@ import {
   SimpleGrid,
   VisuallyHidden
 } from "@chakra-ui/react";
+
 import {
   chainassets,
   chainName,
@@ -43,7 +51,7 @@ import {
   handleChangeColorModeValue,
 } from "../components";
 //import { SendTokensCard } from "../components/react/send-tokens-card";
-
+import { fetchOsmoPrice } from '../hooks';
 import { cosmos } from 'osmojs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { SiTwitter, SiDiscord } from 'react-icons/si';
@@ -137,11 +145,19 @@ export default function Home() {
     <Container maxW={'6xl'}>
       <Head>
         <title>Zenith Station</title>
-        <meta name="description" content="Homepage of Zenith Station, a validator on Osmosis, Evmos, and BitSong." />
+        <meta
+          name="description"
+          content="Homepage of Zenith Station, a best in class validator on Osmosis, Evmos, Stride, and Bitsong." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <SimpleGrid justifyContent="center" row={2} spacing={0}>
-        <Image src='./images/ZenithMos.png' alt='Zenith Logo' w={600}></Image>
+      <SimpleGrid
+        justifyContent="center"
+        row={2}
+        spacing={0}>
+        <Image
+          src='./images/ZenithMos.png'
+          alt='Zenith Logo'
+          w={600}></Image>
       <Heading
           as="h1"
           fontSize={{ base: "3xl", md: "5xl" }}
@@ -150,21 +166,44 @@ export default function Home() {
         ><VisuallyHidden>Zenith</VisuallyHidden>
           Station
         </Heading></SimpleGrid>
-<Stack direction='row-reverse' spacing={2} padding={2}>
-  <Link href='https://twitter.com/Zenith_Station' target="_blank" _hover={{ textDecoration: 'none' }}><Button leftIcon={<SiTwitter />} colorScheme='twitter' variant='ghost'>
-    Twitter
-  </Button></Link>
-  <Link href='https://discord.com/invite/6w5sCEm9kn' target="_blank" _hover={{ textDecoration: 'none' }}><Button leftIcon={<SiDiscord />} colorScheme='purple' variant='solid'>
-    Join our Discord!
-  </Button></Link>
-</Stack>
-<Tabs isFitted variant='enclosed'>
-        <TabList fontFamily={"Sono"} mb='0.5rem'>
-    <Tab>Delegate</Tab>
-    <Tab>About Us</Tab>
-    <Tab isDisabled>Services</Tab>
-  </TabList>
-  <TabPanels>
+      <Stack
+        direction='row-reverse'
+        spacing={2}
+        padding={2}>
+        <Link
+          href='https://twitter.com/Zenith_Station'
+          target="_blank"
+          _hover={{ textDecoration: 'none' }}>
+          <Button
+            leftIcon={<SiTwitter />}
+            colorScheme='twitter'
+            variant='ghost'>
+            Twitter
+          </Button>
+        </Link>
+        <Link
+          href='https://discord.com/invite/6w5sCEm9kn'
+          target="_blank"
+          _hover={{ textDecoration: 'none' }}>
+          <Button
+            leftIcon={<SiDiscord />}
+            colorScheme='purple'
+            variant='solid'>
+            Join our Discord!
+          </Button>
+        </Link>
+      </Stack>
+      <Tabs
+        isFitted
+        variant='enclosed'>
+        <TabList
+          fontFamily={"Sono"}
+          mb='0.5rem'>
+          <Tab>Delegate</Tab>
+          <Tab>About Us</Tab>
+          <Tab isDisabled>Services</Tab>
+        </TabList>
+        <TabPanels>
           <TabPanel>
             <Heading as="h2"
               mb={2}
@@ -197,13 +236,16 @@ export default function Home() {
             </Heading>
             <Text
               mb={5}
-              fontSize={{ base: "md", md: "lg" }}>Zenith Station started small, with a mission to build diverse relationships within the Cosmos Ecosystem. As a result, we haven&#39;t always been influential, and we&#39;d like to take you back to the beginning. Enter: Bitsong - our first foray into validation. This chain gave us a realistic place to gauge interest and learn our skills comfortably while operating inside a production environment.</Text>
+              fontSize={{ base: "md", md: "lg" }}>
+              Zenith Station started small, with a mission to build diverse relationships within the Cosmos Ecosystem. As a result, we haven&#39;t always been influential, and we&#39;d like to take you back to the beginning. Enter: Bitsong - our first foray into validation. This chain gave us a realistic place to gauge interest and learn our skills comfortably while operating inside a production environment.</Text>
             <Text
               mb={5}
-              fontSize={{ base: "md", md: "lg" }}>Over time, we formed strategic partnerships and quickly expanded our services to include Evmos. With the acquisition of bare metal hardware and additional economic security, Zenith Station was able to enter the Osmosis active set while also adding Stride to our portfolio. At this moment, we decided to change our name - from OzMage Validation to Zenith Station - reflecting our desire to align with the space-themed passion of the Cosmos Ecosystem. </Text>
+              fontSize={{ base: "md", md: "lg" }}>
+              Over time, we formed strategic partnerships and quickly expanded our services to include Evmos. With the acquisition of bare metal hardware and additional economic security, Zenith Station was able to enter the Osmosis active set while also adding Stride to our portfolio. At this moment, we decided to change our name - from OzMage Validation to Zenith Station - reflecting our desire to align with the space-themed passion of the Cosmos Ecosystem. </Text>
             <Text
               mb={5}
-              fontSize={{ base: "md", md: "lg" }}>Today, Zenith Station prides itself on being a top-performing bare metal validator, boasting averages of over 99% uptime. In addition to our reliable services, we are committed to playing an active role in governance to drive sustainable growth to the chains we validate.</Text>
+              fontSize={{ base: "md", md: "lg" }}>
+              Today, Zenith Station prides itself on being a top-performing bare metal validator, boasting averages of over 99% uptime. In addition to our reliable services, we are committed to playing an active role in governance to drive sustainable growth to the chains we validate.</Text>
             <Heading
               as="h2"
               mb={2}

@@ -12,6 +12,8 @@
     "locks": "npm run locks:remove && npm run locks:create"
   },
   "dependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/plugin-syntax-top-level-await": "^7.14.5",
     "@chain-registry/osmosis": "1.6.0",
     "@chain-registry/types": "0.14.0",
     "@chakra-ui/icons": "2.0.12",
